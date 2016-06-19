@@ -4,26 +4,16 @@
 @import 'modules/mixins';
 /* @import 'sprite'; */
 
-* {
-  box-sizing: border-box;
-}
-
-.body {
-  text-align: center;
-  margin: 0 auto 0;
-  background-color: white;
-  font-family: "Proxima Nova Regular";
-}
-
 .p-hero {
+  text-align: center;
   background-image: url("img/p-background.png");
   background-repeat: no-repeat;
   background-position: center bottom;
 }
 
 .container {
-  width: 940px;
   margin: 0 auto;
+  width: 940px;
 }
 
 .p-gallery {
@@ -34,7 +24,6 @@
 .p-gallery-pic {
   width: 825px;
   height: 530px;
-  margin: 0;
   float: left;
 }
 
@@ -50,7 +39,7 @@
 	display: none;
 }
 
-.p-gallery:before {
+.p-gallery_next {
   content: "";
   display: block;
   width: 40px;
@@ -58,24 +47,22 @@
   background-color: red;
   position: absolute;
   margin-top: 245px;
-  margin-left: 15px; 
+  margin-left: 15px;
 }
 
-.p-gallery:after {
+.p-gallery_prev {
   content: "";
   display: block;
   width: 40px;
   height: 40px;
   background-color: red;
   position: absolute;
-  margin-top: 245px;
-  margin-left: 775px; 
+  margin: 245px 0 775px;
 }
 
 .p-gallery-thumbs {
   width: 97px;
   height: 325px;
-  margin: 0;
   float: right;
 }
 
@@ -83,10 +70,12 @@
   width: 95px;
   height: 95px;
   margin: 0 0 20px;
-}
 
-.is-active {
-  border: 1px solid blue;
+  &.is-active {
+    //border: 1px solid #0539a6;
+    //outline:
+    //box-shadow:
+  }
 }
 
 .p-gallery-logo {
@@ -101,7 +90,7 @@
 
 .p-switchers-item {
   width: 160px;
-  margin: 0 35px 0;
+  margin: 0 35px;
   display: inline-block;
 }
 
@@ -111,7 +100,6 @@
   width: 170px;
   height: 170px;
   background-color: red;
-
 }
 
 .p-hero-title {
