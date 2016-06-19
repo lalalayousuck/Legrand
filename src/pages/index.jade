@@ -1,0 +1,49 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="/assets/main.css")
+  body
+    .p-hero
+      .container
+        .p-gallery#p-gallery-1
+          img#big_pic.p-gallery-pic(src='assets/mat_black/mat_pic1.jpg')
+          .p-gallery-thumbs
+            img#p-thumb-1.p-gallery-thumb.is-active(src='assets/mat_black/mat_pic1.jpg')
+            img#p-thumb-2.p-gallery-thumb(src='assets/mat_black/mat_pic2.jpg')
+            img#p-thumb-3.p-gallery-thumb(src='assets/mat_black/mat_pic3.jpg')
+          img.p-gallery-logo(src='assets/p-logo.png')
+        .p-gallery#p-gallery-2
+          img#big_pic.p-gallery-pic(src='assets/narciss/narc_pic1.jpg')
+          .p-gallery-thumbs
+            img#p-thumb-1.p-gallery-thumb.is-active(src='assets/narciss/narc_pic1.jpg')
+            img#p-thumb-2.p-gallery-thumb(src='assets/narciss/narc_pic2.jpg')
+            img#p-thumb-3.p-gallery-thumb(src='assets/narciss/narc_pic3.jpg')
+          img.p-gallery-logo(src='assets/p-logo.png')
+        .p-gallery#p-gallery-3
+          img#big_pic.p-gallery-pic(src='assets/jemchug/jem_pic1.jpg')
+          .p-gallery-thumbs
+            img#p-thumb-1.p-gallery-thumb.is-active(src='assets/jemchug/jem_pic1.jpg')
+            img#p-thumb-2.p-gallery-thumb(src='assets/jemchug/jem_pic2.jpg')
+            img#p-thumb-3.p-gallery-thumb(src='assets/jemchug/jem_pic3.jpg')
+          img.p-gallery-logo(src='assets/p-logo.png')
+        .p-gallery#p-gallery-4
+          img#big_pic.p-gallery-pic(src='assets/temnoe_derevo/temnoe_derevo_pic1.jpg')
+          .p-gallery-thumbs
+            img#p-thumb-1.p-gallery-thumb.is-active(src='assets/temnoe_derevo/temnoe_derevo_pic1.jpg')
+            img#p-thumb-2.p-gallery-thumb(src='assets/temnoe_derevo/temnoe_derevo_pic2.jpg')
+            img#p-thumb-3.p-gallery-thumb(src='assets/temnoe_derevo/temnoe_derevo_pic3.jpg')
+          img.p-gallery-logo(src='assets/p-logo.png')
+        .p-switchers
+          img.p-switchers-item.switchers-on(src='assets/mat_black/mat_switch.png')
+          img.p-switchers-item(src='assets/narciss/narc_switch.png')
+          img.p-switchers-item(src='assets/jemchug/jem_switch.png')
+          img.p-switchers-item(src='assets/temnoe_derevo/temnoe_derevo_switch.png')
+        h1.p-hero-title VALENA LIFE/ALLURE
+        p.p-hero-text
+          | Valena Life/Allure отражает актуальные тренды и
+          br
+          | сочетает в себе деликатность и новизну
+        button.p-hero-btn Узнать больше
+    script(src='/assets/main.js')

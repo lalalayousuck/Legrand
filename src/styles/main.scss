@@ -1,0 +1,136 @@
+@import 'modules/reset';
+@import 'modules/tune';
+@import 'modules/icons';
+@import 'modules/mixins';
+/* @import 'sprite'; */
+
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  text-align: center;
+  margin: 0 auto 0;
+  background-color: white;
+  font-family: "Proxima Nova Regular";
+}
+
+.p-hero {
+  background-image: url("img/p-background.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.p-gallery {
+  margin: 85px 0 0;
+  height: 530px;
+}
+
+.p-gallery-pic {
+  width: 825px;
+  height: 530px;
+  margin: 0;
+  float: left;
+}
+
+#p-gallery-2 {
+	display: none;
+}
+
+#p-gallery-3 {
+	display: none;
+}
+
+#p-gallery-4 {
+	display: none;
+}
+
+.p-gallery:before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  position: absolute;
+  margin-top: 245px;
+  margin-left: 15px; 
+}
+
+.p-gallery:after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  position: absolute;
+  margin-top: 245px;
+  margin-left: 775px; 
+}
+
+.p-gallery-thumbs {
+  width: 97px;
+  height: 325px;
+  margin: 0;
+  float: right;
+}
+
+.p-gallery-thumb {
+  width: 95px;
+  height: 95px;
+  margin: 0 0 20px;
+}
+
+.is-active {
+  border: 1px solid blue;
+}
+
+.p-gallery-logo {
+  margin-left: 20px;
+  margin-top: 350px;
+  position: absolute;
+}
+
+.p-switchers {
+  margin: 62px auto 115px;
+}
+
+.p-switchers-item {
+  width: 160px;
+  margin: 0 35px 0;
+  display: inline-block;
+}
+
+.switchers-on:before {
+  content: "";
+  display: block;
+  width: 170px;
+  height: 170px;
+  background-color: red;
+
+}
+
+.p-hero-title {
+  color: #333333;
+  text-align: center;
+}
+
+.p-hero-text {
+  margin-top: 18px;
+  color: #666666;
+  text-align: center;
+}
+
+.p-hero-btn {
+  width: 316px;
+  height: 44px;
+  color: white;
+  background-color: #bd302a;
+  border-radius: 5px;
+  border: 0;
+  margin: 45px auto 173px;
+}
