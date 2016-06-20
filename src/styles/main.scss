@@ -6,7 +6,7 @@
 
 .p-hero {
   text-align: center;
-  background-image: url("img/p-background.png");
+  background-image: url("assets/p-background.png");
   background-repeat: no-repeat;
   background-position: center bottom;
 }
@@ -39,25 +39,50 @@
 	display: none;
 }
 
-.p-gallery_next {
-  content: "";
-  display: block;
+.prev {
   width: 40px;
   height: 40px;
-  background-color: red;
+  border-radius: 40px;
+  background-color: #000000;
   position: absolute;
-  margin-top: 245px;
-  margin-left: 15px;
+  margin: 245px 20px 0;
+  opacity: 0.3;
 }
 
-.p-gallery_prev {
+.prev:after {
   content: "";
   display: block;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  position: absolute;
+  margin: 13px 15px 0;
+  -webkit-transform: rotate(45deg);
+}
+
+.next {
   width: 40px;
   height: 40px;
-  background-color: red;
+  border-radius: 40px;
+  background-color: #000000;
   position: absolute;
-  margin: 245px 0 775px;
+  margin: 245px 765px 0;
+  opacity: 0.3;
+}
+
+.next:after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  position: absolute;
+  margin: 13px 10px 0;
+  -webkit-transform: rotate(45deg);
 }
 
 .p-gallery-thumbs {
