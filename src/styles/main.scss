@@ -4,11 +4,17 @@
 @import 'modules/mixins';
 /* @import 'sprite'; */
 
+@font-face {
+    font-family: "Proxima Nova";
+    src: url('assets/proximanovaregular.woff');
+  }
+
 .p-hero {
   text-align: center;
-  background-image: url("assets/p-background.png");
+  background-image: url('/assets/p-background.png');
   background-repeat: no-repeat;
   background-position: center bottom;
+  font-family: "Proxima Nova";
 }
 
 .container {
@@ -25,8 +31,8 @@
   width: 825px;
   height: 530px;
   float: left;
-  background-image: url("assets/mat_black/mat_pic1.png");
-}
+  background-size: cover;
+  }
 
 #p-gallery-2 {
 	display: none;
