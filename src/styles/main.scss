@@ -116,12 +116,16 @@
 .p-hero-title {
   color: #333333;
   text-align: center;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .p-hero-text {
   margin-top: 18px;
   color: #666666;
   text-align: center;
+  line-height: 20px;
+  word-spacing: 4px;
 }
 
 .p-hero-btn {
@@ -133,4 +137,5 @@
   border: 0;
   margin: 45px auto 173px;
   cursor: pointer;
+  font-size: 15px;
 }
